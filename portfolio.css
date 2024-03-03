@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    z-index: 2;
+    background: rgba(0,0,0,.12);
+    /* background-color: black; */
+    margin: 0px;
+}
+#div2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    gap: 20px;
+}
+.class1{
+    color: white;
+    text-decoration-line: none;
+    font-size: 20px;
+}
+#para1{
+    color: white;
+    display: inline;
+}
+.class1:hover{
+    /* color: violet; */
+    /* color: #1ed760; */
+    /* color: linear-gradient(90deg,#C77BF4 0%,#FF5672 100%); */
+    color: #C77BF4;
+}
+
+.div5{
+    padding-top:150px;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    /* border: 2px solid red;  */
+}
+#row1{
+    font-size: 55px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+#section1{
+    margin-top: 70px;
+    /* border: 2px solid red;   */
+    box-sizing: border-box;
+    width: 550px;
+    margin-left: 60px;
+}
+#h1{
+    font-size: 45px;
+    line-height: 70px; 
+}
+#div10{
+    height: 400px;
+    width: 290px;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    /* border: 2px solid red;   */
+    overflow: hidden ;
+    border-radius: 50px;
+    /* box-sizing: border-box; */
+}
+#img10{
+    border-radius: 50px;
+}
+#About{
+    height: 200vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 50px;
+    /* border: 2px solid red; */
+}
+
+#About>div+div{
+    height: 500px;
+}
+
+.aboutheadings1{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutheadings1>h1{
+    font-size: 50px;
+    transition: all 1s;
+}
+
+.aboutheadings1>h1:hover, .Skillsheadings1>h1:hover{
+    text-shadow: 0px 0px 25px white;
+}
+
+.aboutheadings2{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutheadings2>h2{
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+
+.Skillsheadings1{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    top: 0px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Skillsheadings1>h1{
+    transition: all 1s;
+
+}
+
+.skillsinMob{
+    display: none;
+}
+
+.Skillsheadings2{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    top: 100px;
+}
+
+.Skillsheadings2>table{
+    width: 100%;
+    height: 200px;
+}
+
+table th{
+    font-size: 20px;
+}
+
+table td{
+    font-size: 18px;
+}
+
+table th, td{
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    text-align: left;
+    /* background-color: aquamarine; */
+}
+
+
+table td>ul{
+    list-style-type: none;
+
+}
+table li>ul, table li>ul>li{
+    padding: 5px;
+    list-style-type: disc;
+
+}
+
+.topicslists>li::marker{
+    color: #C77BF4;
+}
+
+.topicslists{
+    margin-left: 30px;
+}
+
+#Projects{
+    width: 75%;
+    height: 240vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 200px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: none; */
+}
+
+.project1{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+.project1:hover{
+    text-shadow: 0px 0px 25px white;
+}
+
+.proheadhead{
+    display: inline-block;
+    width: 50px;
+}
+
+.prohead>h1{
+    font-size: 50px;
+    color: white;
+    transition: all 1s;
+}
+
+.prohead>h1:hover{
+    text-shadow: 0px 0px 25px white;
+}
+
+.pro1{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro1>h1{
+    font-size: 26px;
+    color: white;
+    transition: all 1s;
+    width: 400px;
+
+    
+}
+.pro1>a{
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.pro1>a:hover{
+    text-decoration: underline;
+    color: #C77BF4;
+}
+
+.pro1-para{
+    padding: 30px 100px;
+    font-size: 22px;
+    color: white;
+}
+
+.pro1-para::first-letter{
+    font-size: 30px;
+    color: #C77BF4;
+}
+
+.pro1-para>p::selection{
+    font-size: 40px;
+    color: black;
+    background-color: #C77BF4;
+}
+
+footer{
+    width: 100%; 
+    height: 25vh;
+    position: relative;
+    top: 300px;
+    bottom: 0px;
+    /* border: 2px solid red; */
+}
+.contact>h1{
+    text-align: center;
+    font-size: 40px;
+}
+#div20{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+#style{
+    background: linear-gradient(90deg,#C77BF4 0%,#FF5672 100%);
+    margin-top: 50px;
+}
+.class2{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+#skills{
+    display: none;
+}
+@media only screen and (max-width : 500px) {
+    #div2{
+        display: none;
+    }
+    #div1{
+        text-align: center;
+        padding-right: 20px;
+
+    }
+    .div5{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    #h1{
+        text-align: center;
+        /* padding-left: 60px; */
+        font-size: 35px; 
+        /* border: 2px solid red; */
+    }
+    .row1{
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    .aboutheadings1>h1{
+        font-size: 35px; 
+    }
+    .aboutheadings2>h2{
+        font-size: 20px;
+        line-height: normal;
+        padding-top: 150px;
+        text-align: center;
+        
+    }
+    .Skillsheadings1>h1{
+        margin-top: 170px;
+        text-align: center;
+    }
+    table{
+        display: none;
+    }
+    #skills{
+        display: block;
+        z-index: 5;
+        padding-top: 100px;
+    }
+    .block{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #Projects{
+        margin-top: 350px;
+        /* border: 2px solid red; */
+    }
+    .pro1-para{
+        /* border: 2px solid red; */
+        padding: 0px;
+    }
+    #Contact{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    footer{
+        width:100%;
+        margin-left: 130px;
+    }
+}
